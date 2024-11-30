@@ -5,7 +5,12 @@
 
 #include "MPU6050.h"
 #include "inv_mpu.h"
-#include "ad.h" sssssssssssssss 
+<<<<<<< HEAD
+#include "ad.h" sssssssssssssss 11
+=======
+#include "ad.h"
+
+>>>>>>> parent of 2948ea8 (第一次测试)
 float Pitch,Roll,Yaw;	
 int16_t ax,ay,az,gx,gy,gz;	
 float anglea;
@@ -28,7 +33,7 @@ AD_Init();
 		LCD_ShowNum(0,0,advalue,5,16);
 	uint16_t	pwm_value=(float)advalue/4095*100;
 		LCD_ShowNum(0,30,pwm_value,4,16);
- #diyiciceshi
+
 	}
 	
 }
