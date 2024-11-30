@@ -5,7 +5,7 @@
 
 #include "MPU6050.h"
 #include "inv_mpu.h"
-#include "ad.h" sssssssssssssss 11
+#include "ad.h" sssssssssssssss 
 float Pitch,Roll,Yaw;	
 int16_t ax,ay,az,gx,gy,gz;	
 float anglea;
