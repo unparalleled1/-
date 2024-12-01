@@ -165,9 +165,7 @@ void LCD_ShowChar(u16 x,u16 y,u8 num,u8 size,u8 mode);						//显示一个字符
 void LCD_ShowNum(u16 x,u16 y,u32 num,u8 len,u8 size);  						//显示一个数字
 void LCD_ShowxNum(u16 x,u16 y,u32 num,u8 len,u8 size,u8 mode);				//显示 数字
 void LCD_ShowString(u16 x,u16 y,u16 width,u16 height,u8 size,u8 *p);		//显示一个字符串,12/16字体
-void LCD_ShowSignedNum(u16 x,u16 y,int16_t num,u8 len,u8 size);		//显示有符号数字
-void LCD_ShowFloatNum(u16 x,u16 y,float num,u8 Int_Len,u8 Float_Len,u8 size); //显示带小数数字
-void LCD_ShowSingedNum(u16 x,u16 y,s32 num,u8 len,u8 size);
+
 void LCD_WriteReg(u16 LCD_Reg, u16 LCD_RegValue);
 u16 LCD_ReadReg(u16 LCD_Reg);
 void LCD_WriteRAM_Prepare(void);

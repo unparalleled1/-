@@ -1,4 +1,4 @@
-..\obj\ad.o: ..\HARDWARE\adc\ad.c
+..\obj\ad.o: ..\HARDWARE\ad.c
 ..\obj\ad.o: ..\USER\stm32f10x.h
 ..\obj\ad.o: ..\CORE\core_cm3.h
 ..\obj\ad.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h

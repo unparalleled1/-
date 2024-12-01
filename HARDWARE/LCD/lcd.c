@@ -753,7 +753,7 @@ void LCD_Init(void)
 			}
  		}  	
 	} 
- 	printf(" LCD ID:%x\r\n",lcddev.id); //打印LCD ID   
+// 	printf(" LCD ID:%x\r\n",lcddev.id); //打印LCD ID   
 	if(lcddev.id==0X9341)	//9341初始化
 	{	 
 		LCD_WR_REG(0xCF);  
@@ -3007,85 +3007,11 @@ void LCD_ShowString(u16 x,u16 y,u16 width,u16 height,u8 size,u8 *p)
 }
 
 
-void LCD_ShowSignedNum(u16 x,u16 y,int16_t num,u8 len,u8 size)
-{
-	if(num >= 0)
-	{
-		LCD_ShowChar(x, y, '+', size, 0);
-		x += (size / 2);
-		LCD_ShowNum(x, y, num, len, size);
-	}
-	else
-	{
-		LCD_ShowChar(x, y, '-', size, 0);
-		x += (size / 2);
-		LCD_ShowNum(x, y, -num, len, size);
 
-	}
-}
 
-//显示带小数的数字，正负都可以
-//Int_Len:整数位数   Float_Len：小数位数
-void LCD_ShowFloatNum(u16 x,u16 y,float num,u8 Int_Len,u8 Float_Len,u8 size)
-{         	
-	if(num>=0)
-	{
-		u32 integerPart =(u32)(num); //获取整数部分
-		float float_tmp=num-integerPart; //获取小数部分
-		//正号
-		LCD_ShowChar(x, y, '+', size, 0);
-		x += (size / 2);
-		//整数部分
-		LCD_ShowNum(x, y, integerPart, Int_Len, size);
-		x += (Int_Len * (size / 2));
-		//以下小数部分
-		LCD_ShowChar(x, y, '.', size, 0);
-		x += (size / 2);
-		for(int i=0;i<Float_Len;i++)	float_tmp*=10;
-		u32 floatPart=(u32)float_tmp;
-		LCD_ShowNum(x, y, floatPart, Float_Len, size);
-	}
-	else
-	{
-		num=-num;
-		u32 integerPart =(u32)(num); //获取整数部分
-		float float_tmp=num-integerPart; //获取小数部分
-		//正号
-		LCD_ShowChar(x, y, '-', size, 0);
-		x += (size / 2);
-		//整数部分
-		LCD_ShowNum(x, y, integerPart, Int_Len, size);
-		x += (Int_Len * (size / 2));
-		//以下小数部分
-		LCD_ShowChar(x, y, '.', size, 0);
-		x += (size / 2);
-		for(int i=0;i<Float_Len;i++)	float_tmp*=10;
-		u32 floatPart=(u32)float_tmp;
-		LCD_ShowNum(x, y, floatPart, Float_Len, size);
-	}
-}
 
-//显示数字,高位为0,则不显示
-//x,y :起点坐标	 
-//len :数字的位数
-//size:字体大小
-//color:颜色 
-//num:数值(0~4294967295);	 
 
-void LCD_ShowSingedNum(u16 x,u16 y,s32 num,u8 len,u8 size)
-{
-	if(num>=0)
-	{
-		LCD_ShowChar(x,y,'+',size,0);
-		LCD_ShowNum(x+size,y,num,len,size);
-	}
-	else
-		{
-			num=-num;
-		LCD_ShowChar(x,y,'-',size,0);
-		LCD_ShowNum(x+size,y,num,len,size);
-	}
-}
+
 
 
 
