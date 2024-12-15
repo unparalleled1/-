@@ -21,7 +21,7 @@ Target DLL:      STLink\ST-LINKIII-KEIL_SWO.dll V3.0.1.0
 Dialog DLL:      TARMSTM.DLL V1.66.0.0
  
 <h2>Project:</h2>
-D:\stm32projrct\2024_Test\USER\LCD.uvprojx
+E:\GitHub\graduation-project\USER\LCD.uvprojx
 Project File Date:  10/27/2024
 
 <h2>Output:</h2>
@@ -34,39 +34,15 @@ compiling main.c...
   #endif
 ..\HARDWARE\pwm.h(5): warning:  #1-D: last line of file ends without a newline
   #endif
-main.c(58): warning:  #223-D: function "my_esp8266_init" declared implicitly
-  			if(my_esp8266_init()==1)
-main.c(183): warning:  #111-D: statement is unreachable
+main.c(107): warning:  #111-D: statement is unreachable
   			flag_num=15;
-main.c(35): warning:  #177-D: variable "lcd_id"  was declared but never referenced
+main.c(28): warning:  #177-D: variable "lcd_id"  was declared but never referenced
   	u8 lcd_id[12];			//存放LCD ID字符串
-main.c: 6 warnings, 0 errors
-compiling esp8266.c...
-..\HARDWARE\esp8266.c(38): warning:  #9-D: nested comment is not allowed
-      g_uart_handle.Instance          = ESP8266_UART_INTERFACE;       /* ESP8266 UART 
-..\HARDWARE\esp8266.c(39): warning:  #9-D: nested comment is not allowed
-      g_uart_handle.Init.BaudRate     = baudrate;                     /* 波特率 
-..\HARDWARE\esp8266.c(40): warning:  #9-D: nested comment is not allowed
-      g_uart_handle.Init.WordLength   = UART_WORDLENGTH_8B;           /* 数据位 
-..\HARDWARE\esp8266.c(41): warning:  #9-D: nested comment is not allowed
-      g_uart_handle.Init.StopBits     = UART_STOPBITS_1;              /* 停止位 
-..\HARDWARE\esp8266.c(42): warning:  #9-D: nested comment is not allowed
-      g_uart_handle.Init.Parity       = UART_PARITY_NONE;             /* 校验位 
-..\HARDWARE\esp8266.c(43): warning:  #9-D: nested comment is not allowed
-      g_uart_handle.Init.Mode         = UART_MODE_TX_RX;              /* 收发模式 
-..\HARDWARE\esp8266.c(44): warning:  #9-D: nested comment is not allowed
-      g_uart_handle.Init.HwFlowCtl    = UART_HWCONTROL_NONE;          /* 无硬件流控 
-..\HARDWARE\esp8266.c(45): warning:  #9-D: nested comment is not allowed
-      g_uart_handle.Init.OverSampling = UART_OVERSAMPLING_16;         /* 过采样 
-..\HARDWARE\esp8266.c(46): warning:  #9-D: nested comment is not allowed
-      HAL_UART_Init(&g_uart_handle);                                  /* 使能ESP8266 UART 
-..\HARDWARE\esp8266.c(374): warning:  #550-D: variable "len"  was set but never used
-      uint16_t len;
-..\HARDWARE\esp8266.c: 10 warnings, 0 errors
+main.c: 5 warnings, 0 errors
 linking...
-Program Size: Code=43642 RO-data=6970 RW-data=128 ZI-data=2040  
+Program Size: Code=34966 RO-data=6418 RW-data=92 ZI-data=1852  
 FromELF: creating hex file...
-"..\OBJ\LCD.axf" - 0 Error(s), 16 Warning(s).
+"..\OBJ\LCD.axf" - 0 Error(s), 5 Warning(s).
 
 <h2>Software Packages used:</h2>
 
@@ -80,7 +56,7 @@ Package Vendor: Keil
   C:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.2.0\Device\Include
 
 <h2>Collection of Component Files used:</h2>
-Build Time Elapsed:  00:00:02
+Build Time Elapsed:  00:00:01
 </pre>
 </body>
 </html>

@@ -1,5 +1,5 @@
 Dependencies for Project 'LCD', Target 'LCD': (DO NOT MODIFY !)
-F (.\main.c)(0x671DA1E7)(--c99 -c --cpu Cortex-M3 -g -O0 --apcs=interwork -I ..\HARDWARE\LED -I ..\SYSTEM\delay -I ..\SYSTEM\sys -I ..\SYSTEM\usart -I ..\USER -I ..\STM32F10x_FWLib\inc -I ..\CORE -I ..\HARDWARE\KEY -I ..\HARDWARE\LCD -I ..\HARDWARE-I.\RTE\_LCD-IC:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.2.0\Device\Include-IC:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="524" -DSTM32F10X_HD -DSTM32F10X_HD -DUSE_STDPERIPH_DRIVER-o ..\obj\main.o --omf_browse ..\obj\main.crf --depend ..\obj\main.d)
+F (.\main.c)(0x675EB6B9)(--c99 -c --cpu Cortex-M3 -g -O0 --apcs=interwork -I ..\HARDWARE\LED -I ..\SYSTEM\delay -I ..\SYSTEM\sys -I ..\SYSTEM\usart -I ..\USER -I ..\STM32F10x_FWLib\inc -I ..\CORE -I ..\HARDWARE\KEY -I ..\HARDWARE\LCD -I ..\HARDWARE-I.\RTE\_LCD-IC:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.2.0\Device\Include-IC:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="524" -DSTM32F10X_HD -DSTM32F10X_HD -DUSE_STDPERIPH_DRIVER-o ..\obj\main.o --omf_browse ..\obj\main.crf --depend ..\obj\main.d)
 I (C:\Keil_v5\ARM\ARMCC\include\stdbool.h)(0x588B8344)
 I (..\HARDWARE\LED\led.h)(0x5F4F60BA)
 I (..\SYSTEM\sys\sys.h)(0x6612260B)
